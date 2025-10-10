@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using System;
 using System.Collections.Generic;
 using Laboratory_2.Methods;
@@ -10,7 +10,6 @@ var book = new Book("Foundation", "Isaac Asimov", 1951);
 var borrower = new Borrower(201, "Maria Popescu", new List<Book> { book });
 var librarian = new Librarian { Name = "Mr. Jones", Email = "jones@lib.com", LibrarySection = "Non-Fiction"};
 
-// Use the new inspection method
 Console.WriteLine("--- Inspecting Objects ---");
 ObjectInspector.Inspect(book);
 ObjectInspector.Inspect(borrower);
