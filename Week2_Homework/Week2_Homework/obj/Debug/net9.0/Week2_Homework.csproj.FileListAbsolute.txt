@@ -1,0 +1,15 @@
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\bin\Debug\net9.0\Week2_Homework.exe
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\bin\Debug\net9.0\Week2_Homework.deps.json
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\bin\Debug\net9.0\Week2_Homework.runtimeconfig.json
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\bin\Debug\net9.0\Week2_Homework.dll
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\bin\Debug\net9.0\Week2_Homework.pdb
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.AssemblyInfoInputs.cache
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.AssemblyInfo.cs
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.csproj.CoreCompileInputs.cache
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.sourcelink.json
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.dll
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\refint\Week2_Homework.dll
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.pdb
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\Week2_Homework.genruntimeconfig.cache
+C:\Users\maria\OneDrive\Desktop\Facu\.NET\Week2_Homework\Week2_Homework\obj\Debug\net9.0\ref\Week2_Homework.dll
