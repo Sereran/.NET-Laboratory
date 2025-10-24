@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/OrdersExercise/Mapping/Resolvers/CategoryDisplayResolver.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/OrdersExercise/Mapping/Resolvers/CategoryDisplayResolver.cs" />
+              <option name="originalContent" value="using AutoMapper;&#10;using OrdersExercise.Dtos;&#10;using OrdersExercise.Models;&#10;&#10;namespace OrdersExercise.Mapping.Resolvers&#10;{&#10;    public class CategoryDisplayResolver : IValueResolver&lt;Order, OrderProfileDto, string&gt;&#10;    {&#10;        public string Resolve(Order source, OrderProfileDto destination, string destMember, ResolutionContext context)&#10;        {&#10;            return source.Category switch&#10;            {&#10;                OrderCategory.Fiction =&gt; &quot;Fiction &amp; Literature&quot;,&#10;                OrderCategory.NonFiction =&gt; &quot;Non-Fiction&quot;,&#10;                OrderCategory.Technical =&gt; &quot;Technical &amp; Professional&quot;,&#10;                OrderCategory.Children =&gt; &quot;Children's Orders&quot;,&#10;                _ =&gt; &quot;Uncategorized&quot;,&#10;            };&#10;        }&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="using AutoMapper;&#10;using OrdersExercise.Dtos;&#10;using OrdersExercise.Models;&#10;&#10;namespace OrdersExercise.Mapping.Resolvers&#10;{&#10;    public class CategoryDisplayResolver : IValueResolver&lt;Order, OrderProfileDto, string&gt;&#10;    {&#10;        public string Resolve(Order source, OrderProfileDto destination, string destMember, ResolutionContext context)&#10;        {&#10;            return source.Category switch&#10;            {&#10;                OrderCategory.Fiction =&gt; &quot;Fiction &amp; Literature&quot;,&#10;                OrderCategory.NonFiction =&gt; &quot;Non-Fiction&quot;,&#10;                OrderCategory.Technical =&gt; &quot;Technical &amp; Professional&quot;,&#10;                OrderCategory.Children =&gt; &quot;Children's Orders&quot;,&#10;                _ =&gt; &quot;Uncategorized&quot;,&#10;            };&#10;        }&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/OrdersExercise/Models/Order.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/OrdersExercise/Models/Order.cs" />
+              <option name="originalContent" value="using System;&#10;&#10;namespace OrdersExercise.Models&#10;{&#10;    public class Order&#10;    {&#10;        public Guid Id { get; set; } = Guid.NewGuid();&#10;        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;&#10;        public DateTime? UpdatedAt { get; set; } = null;&#10;&#10;        public string Title { get; set; } = string.Empty;&#10;        public string Author { get; set; } = string.Empty;&#10;        public string ISBN { get; set; } = string.Empty;&#10;        public OrderCategory Category { get; set; }&#10;        public decimal Price { get; set; }&#10;        public DateTime PublishedDate { get; set; }&#10;        public string? CoverImageUrl { get; set; }&#10;&#10;        public int StockQuantity { get; set; } = 0;&#10;        public bool IsAvailable =&gt; StockQuantity &gt; 0;&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="using System;&#10;&#10;namespace OrdersExercise.Models&#10;{&#10;    public class Order&#10;    {&#10;        public Guid Id { get; set; } = Guid.NewGuid();&#10;        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;&#10;        public DateTime? UpdatedAt { get; set; } = null;&#10;&#10;        public string Title { get; set; } = string.Empty;&#10;        public string Author { get; set; } = string.Empty;&#10;        public string ISBN { get; set; } = string.Empty;&#10;        public OrderCategory Category { get; set; }&#10;        public decimal Price { get; set; }&#10;        public DateTime PublishedDate { get; set; }&#10;        public string? CoverImageUrl { get; set; }&#10;&#10;        public int StockQuantity { get; set; } = 0;&#10;        public bool IsAvailable =&gt; StockQuantity &gt; 0;&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/OrdersExercise/Program.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/OrdersExercise/Program.cs" />
+              <option name="originalContent" value="using OrdersExercise.Data;&#10;&#10;var builder = WebApplication.CreateBuilder(args);&#10;&#10;// Add services to the container.&#10;// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi&#10;builder.Services.AddOpenApi();&#10;// Register AutoMapper profiles&#10;builder.Services.AddAutoMapper(typeof(OrdersExercise.Mapping.AdvancedOrderMappingProfile));&#10;// Add in-memory cache&#10;builder.Services.AddMemoryCache();&#10;// Register a simple in-memory order repository for demo/testing&#10;builder.Services.AddSingleton&lt;IOrderRepository, InMemoryOrderRepository&gt;();&#10;&#10;var app = builder.Build();&#10;&#10;&#10;// Configure the HTTP request pipeline.&#10;if (app.Environment.IsDevelopment())&#10;{&#10;    app.MapOpenApi();&#10;}&#10;&#10;app.UseHttpsRedirection();&#10;&#10;app.Run();&#10;" />
+              <option name="updatedContent" value="using OrdersExercise.Data;&#10;&#10;var builder = WebApplication.CreateBuilder(args);&#10;&#10;// Add services to the container.&#10;// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi&#10;builder.Services.AddOpenApi();&#10;// Register AutoMapper profiles&#10;builder.Services.AddAutoMapper(typeof(OrdersExercise.Mapping.AdvancedOrderMappingProfile));&#10;// Add in-memory cache&#10;builder.Services.AddMemoryCache();&#10;// Register a simple in-memory order repository for demo/testing&#10;builder.Services.AddSingleton&lt;IOrderRepository, InMemoryOrderRepository&gt;();&#10;&#10;var app = builder.Build();&#10;&#10;&#10;// Configure the HTTP request pipeline.&#10;if (app.Environment.IsDevelopment())&#10;{&#10;    app.MapOpenApi();&#10;}&#10;&#10;app.UseHttpsRedirection();&#10;&#10;app.Run();" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
