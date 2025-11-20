@@ -8,7 +8,6 @@ namespace OrdersExercise.Mapping.Resolvers
     {
         public string Resolve(Order source, OrderProfileDto destination, string destMember, ResolutionContext context)
         {
-            // Follow the specified precedence
             if (!source.IsAvailable)
                 return "Out of Stock";
 
